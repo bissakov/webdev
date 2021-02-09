@@ -4,265 +4,256 @@
         <meta charset="utf-8">
         <title>Instagram</title>
         <style>
-        	body{
-        		margin: 0px;
-        		text-align: center;
-        		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-        		height: 100%;
-				overflow: hidden;
-        	}
-			#gif{
-				position: relative;
-				top: -625px;
-			}
-			#app_img{
-				position: relative;
-				top: 65px;
-				left: 552px;
-				width: 401px;
-				height: 622px;
-			}
-			#login_box{
-				display: inline-block;
-				width: 348px;
-				height: 382px;
-				position: relative;
-				left: 180px;
-				bottom: 515px;
-				border-style: solid;
-				border-width: 1px;
-				border-radius: 3px;
-				border-color: rgb(0, 0, 0, 0.15)
-			}
-			#login_input{
-				margin-top: 7px;
-				width: 258px;
-				height: 18px;
-				padding-top: 8px;
-    			padding-left: 9px;
-    			padding-bottom: 7px;
-    			background-color: rgb(250,250,250);
-    			font-family: inherit;
-    			font-weight: 
-    			font-size: 12px;
-    			border-width: 1px;
-				border-radius: 3px;
-				border-color: rgb(0, 0, 0, 0.15)
-			}
-			form:valid input[type="submit"] {
-			  	margin-top: 15px;
-				width: 268px;
-				height: 30px;
-				border: none;
-				border-radius: 4px;
-				font-family: inherit;
-				font-size: 14px;
-				font-weight: bold;
-				background-color: #0095f6;
-				color: #fff;
-			}
-
-			form:invalid input[type="submit"] {
-			  	margin-top: 15px;
-				width: 268px;
-				height: 30px;
-				border: none;
-				border-radius: 4px;
-				font-family: inherit;
-				font-size: 14px;
-				font-weight: bold;
-				background-color: #b2dffc;
-				color: #fff;
-			}
-			#linebreak{
-            	text-align: center;
-				margin-left: 40px;
-				margin-top: 25px;
-            	height: 0px;
-            	width: 268px;
-            	border-bottom: 1px solid #dadde1;
+            body{
+            margin: 0px;
+            text-align: center;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+            height: 100%;
+            overflow: hidden;
+            }
+            #gif{
+            position: relative;
+            top: -625px;
+            }
+            #app_img{
+            position: relative;
+            top: 65px;
+            left: 552px;
+            width: 401px;
+            height: 622px;
+            }
+            #login_box{
+            display: inline-block;
+            width: 348px;
+            height: 382px;
+            position: relative;
+            left: 180px;
+            bottom: 515px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+            border-color: rgb(0, 0, 0, 0.15)
+            }
+            #login_input{
+            margin-top: 7px;
+            width: 258px;
+            height: 18px;
+            padding-top: 8px;
+            padding-left: 9px;
+            padding-bottom: 7px;
+            background-color: rgb(250,250,250);
+            font-family: inherit;
+            font-weight: 
+            font-size: 12px;
+            border-width: 1px;
+            border-radius: 3px;
+            border-color: rgb(0, 0, 0, 0.15)
+            }
+            form:valid input[type="submit"] {
+            margin-top: 15px;
+            width: 268px;
+            height: 30px;
+            border: none;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #0095f6;
+            color: #fff;
+            }
+            form:invalid input[type="submit"] {
+            margin-top: 15px;
+            width: 268px;
+            height: 30px;
+            border: none;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #b2dffc;
+            color: #fff;
+            }
+            #linebreak{
+            text-align: center;
+            margin-left: 40px;
+            margin-top: 25px;
+            height: 0px;
+            width: 268px;
+            border-bottom: 1px solid #dadde1;
             }
             #or{
-            	font-family: inherit;
-            	color: rgb(0, 0, 0, 0.7);
-				font-size: 13px;
-				font-weight: 600;
-            	text-align: center;
-            	background-color: white;
-            	position: relative;
-            	bottom: 20px;
-            	width: 25%;
-            	position: relative;
-            	left: 135.75px;
-            	bottom: 20px;
+            font-family: inherit;
+            color: rgb(0, 0, 0, 0.7);
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            background-color: white;
+            position: relative;
+            bottom: 20px;
+            width: 25%;
+            position: relative;
+            left: 135.75px;
+            bottom: 20px;
             }
             #link{
-				cursor: pointer;
-				font-family: inherit;
-				text-decoration:none;
+            cursor: pointer;
+            font-family: inherit;
+            text-decoration:none;
             }
             #signup_box{
-            	height: 61px;
-            	position: relative;
-            	top: 15px;
-            	border-style: solid;
-				border-width: 1px;
-				border-radius: 3px;
-				border-color: rgb(0, 0, 0, 0.15);
-
-			}
-			#foot{
-				margin: 0px;
-				height: 151px;
-				width: 688px;
-				position: relative;
-				bottom: 417px;
-				left: 616px;
-			}
-			#foot_link{
-				cursor: pointer;
-				font-family: inherit;
-				text-decoration:none;
-				color: #8e8e8e;
-				font-size: 12px;
-				margin-right: 15px;
-			}
-			#list_of_lang{
-				border: none;
-				cursor: pointer;
-				font-family: inherit;
-				color: #8e8e8e;
-				outline: 0;
-				background: url(assets/chevron-down.png) 40% / 7% no-repeat;
-				position: relative;
-				right: 50px;
-			}
-			#img_link{
-				height: 40px;
-			}
-			#z{
-				margin-top: 20px;
-			}
-            
+            height: 61px;
+            position: relative;
+            top: 15px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+            border-color: rgb(0, 0, 0, 0.15);
+            }
+            #foot{
+            margin: 0px;
+            height: 151px;
+            width: 688px;
+            position: relative;
+            bottom: 417px;
+            left: 616px;
+            }
+            #foot_link{
+            cursor: pointer;
+            font-family: inherit;
+            text-decoration:none;
+            color: #8e8e8e;
+            font-size: 12px;
+            margin-right: 15px;
+            }
+            #list_of_lang{
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            color: #8e8e8e;
+            outline: 0;
+            background: url(assets/chevron-down.png) 40% / 7% no-repeat;
+            position: relative;
+            right: 50px;
+            }
+            #img_link{
+            height: 40px;
+            }
+            #z{
+            margin-top: 20px;
+            }
         </style>
     </head>
     <body>
-    	<div id="app_img">
-	    	<img src="assets/instagram_app_temp.png">
-	    	<img src="assets/transition_gif.gif" id="gif">
-	    </div>
-		
-		<div id="login_box">
-			<img src="assets/logo.png" width="175" style="margin-top: 5px">
-    		<form>
-				<input type="text" pattern=".{8,}" required id="login_input" placeholder="Phone number, username, or email">
-				<input type="password" pattern=".{8,}" required title="Eight or more characters" id="login_input" name="pwd" placeholder="Password">
-				<input type="submit" id="submit_button" value="Log In">
-			</form>
-			<div id="linebreak"></div>
-			<p id="or">OR</p>
-
-			<ul style="list-style-type:none;padding: 0px">
-  				<li>
-  					<a href="" id="link" style="color: #385185;font-weight: 600;font-size: 13px;">Log In with Facebook</a>
-				</li>
-  				<li style="margin-top: 12px">
-  					<a href="" id="link" style="color: #00376b;font-size: 12px;">Forgot password?</a>
-  				</li>
-			</ul>
-			<div id="signup_box">
-				<p style="font-family: inherit;margin: 20px 15px 15px 15px;font-size: 14px;">
-					Don't have an account? 
-					<a href="" id="link" style="color: #0095f6;font-weight: 500">Sign up</a>
-				</p>
-			</div>
-			<p style="margin-top: 40px;font-size: 14px;font-family: inherit;">Get the app.</p>
-			<div id="z">
-				<a href=""><img src="assets\apple.png" id="img_link"></a>
-				<a href=""><img src="assets\google.png" id="img_link"></a>
-			</div>
-    	</div>
-
-    	<div id="foot">
-    		<ul style="list-style-type:none;padding: 0px">
-    			<li>
-					<a href="" id="foot_link">About</a>
-					<a href="" id="foot_link">Blog</a>
-					<a href="" id="foot_link">Jobs</a>
-					<a href="" id="foot_link">Help</a>
-					<a href="" id="foot_link">API</a>
-					<a href="" id="foot_link">Privacy</a>
-					<a href="" id="foot_link">Terms</a>
-					<a href="" id="foot_link">Top Accounts</a>
-					<a href="" id="foot_link">Hashtags</a>
-					<a href="" id="foot_link">Locations</a>
-    			</li>
-    			<li>
-    				<a href="" id="foot_link">Beauty</a>
-					<a href="" id="foot_link">Dance & Performance</a>
-					<a href="" id="foot_link">Fitness</a>
-					<a href="" id="foot_link">Food & Drink</a>
-					<a href="" id="foot_link">Home & Garden</a>
-					<a href="" id="foot_link">Music</a>
-					<a href="" id="foot_link">Visual Arts</a>
-    			</li>
-
-    			<div style="position: relative;top: 15px;right: 20px">
-			    	<select id="list_of_lang" style="appearance: none">
-						<option>English</option>
-						<option>Afrikaans</option>
-						<option>Čeština</option>
-						<option>Dansk</option>
-						<option>Deutsch</option>
-						<option>Ελληνικά</option>
-						<option>English (UK)</option>
-						<option>Español (España)</option>
-						<option>Español</option>
-						<option>Suomi</option>
-						<option>Français</option>
-						<option>Bahasa Indonesia</option>
-						<option>Italiano</option>
-						<option>日本語</option>
-						<option>한국어</option>
-						<option>Bahasa Melayu</option>
-						<option>Norsk</option>
-						<option>Nederlands</option>
-						<option>Polski</option>
-						<option>Português (Brasil)</option>
-						<option>Português (Portugal)</option>
-						<option>Русский</option>
-						<option>Svenska</option>
-						<option>ภาษาไทย</option>
-						<option>Filipino</option>
-						<option>Türkçe</option>
-						<option>中文(简体)</option>
-						<option>中文(台灣)</option>
-						<option>বাংলা</option>
-						<option>ગુજરાતી</option>
-						<option>हिन्दी</option>
-						<option>Hrvatski</option>
-						<option>Magyar</option>
-						<option>ಕನ್ನಡ</option>
-						<option>മലയാളം</option>
-						<option>मराठी</option>
-						<option>नेपाली</option>
-						<option>ਪੰਜਾਬੀ</option>
-						<option>සිංහල</option>
-						<option>Slovenčina</option>
-						<option>தமிழ்</option>
-						<option>తెలుగు</option>
-						<option>Tiếng Việt</option>
-						<option>中文(香港)</option>
-						<option>Български</option>
-						<option>Français (Canada)</option>
-						<option>Română</option>
-		 				<option>Српски</option>
-						<option>Українська</option>
-			    	</select>		
-			    			
-			    	<div id="copyright" style="font-family: inherit;color: #8e8e8e;font-family: inherit;font-size: 12px;width: 180px;position: relative;bottom: 17px;left: 305px">© 2021 Instagram from Facebook</div>
-			    </div>
-    	</div>
-    	
+        <div id="app_img">
+            <img src="assets/instagram_app_temp.png">
+            <img src="assets/transition_gif.gif" id="gif">
+        </div>
+        <div id="login_box">
+            <img src="assets/logo.png" width="175" style="margin-top: 5px">
+            <form>
+                <input type="text" pattern=".{8,}" required id="login_input" placeholder="Phone number, username, or email">
+                <input type="password" pattern=".{8,}" required title="Eight or more characters" id="login_input" name="pwd" placeholder="Password">
+                <input type="submit" id="submit_button" value="Log In">
+            </form>
+            <div id="linebreak"></div>
+            <p id="or">OR</p>
+            <ul style="list-style-type:none;padding: 0px">
+                <li>
+                    <a href="" id="link" style="color: #385185;font-weight: 600;font-size: 13px;">Log In with Facebook</a>
+                </li>
+                <li style="margin-top: 12px">
+                    <a href="" id="link" style="color: #00376b;font-size: 12px;">Forgot password?</a>
+                </li>
+            </ul>
+            <div id="signup_box">
+                <p style="font-family: inherit;margin: 20px 15px 15px 15px;font-size: 14px;">
+                    Don't have an account? 
+                    <a href="" id="link" style="color: #0095f6;font-weight: 500">Sign up</a>
+                </p>
+            </div>
+            <p style="margin-top: 40px;font-size: 14px;font-family: inherit;">Get the app.</p>
+            <div id="z">
+                <a href=""><img src="assets\apple.png" id="img_link"></a>
+                <a href=""><img src="assets\google.png" id="img_link"></a>
+            </div>
+        </div>
+        <div id="foot">
+            <ul style="list-style-type:none;padding: 0px">
+            <li>
+                <a href="" id="foot_link">About</a>
+                <a href="" id="foot_link">Blog</a>
+                <a href="" id="foot_link">Jobs</a>
+                <a href="" id="foot_link">Help</a>
+                <a href="" id="foot_link">API</a>
+                <a href="" id="foot_link">Privacy</a>
+                <a href="" id="foot_link">Terms</a>
+                <a href="" id="foot_link">Top Accounts</a>
+                <a href="" id="foot_link">Hashtags</a>
+                <a href="" id="foot_link">Locations</a>
+            </li>
+            <li>
+                <a href="" id="foot_link">Beauty</a>
+                <a href="" id="foot_link">Dance & Performance</a>
+                <a href="" id="foot_link">Fitness</a>
+                <a href="" id="foot_link">Food & Drink</a>
+                <a href="" id="foot_link">Home & Garden</a>
+                <a href="" id="foot_link">Music</a>
+                <a href="" id="foot_link">Visual Arts</a>
+            </li>
+            <div style="position: relative;top: 15px;right: 20px">
+                <select id="list_of_lang" style="appearance: none">
+                    <option>English</option>
+                    <option>Afrikaans</option>
+                    <option>Čeština</option>
+                    <option>Dansk</option>
+                    <option>Deutsch</option>
+                    <option>Ελληνικά</option>
+                    <option>English (UK)</option>
+                    <option>Español (España)</option>
+                    <option>Español</option>
+                    <option>Suomi</option>
+                    <option>Français</option>
+                    <option>Bahasa Indonesia</option>
+                    <option>Italiano</option>
+                    <option>日本語</option>
+                    <option>한국어</option>
+                    <option>Bahasa Melayu</option>
+                    <option>Norsk</option>
+                    <option>Nederlands</option>
+                    <option>Polski</option>
+                    <option>Português (Brasil)</option>
+                    <option>Português (Portugal)</option>
+                    <option>Русский</option>
+                    <option>Svenska</option>
+                    <option>ภาษาไทย</option>
+                    <option>Filipino</option>
+                    <option>Türkçe</option>
+                    <option>中文(简体)</option>
+                    <option>中文(台灣)</option>
+                    <option>বাংলা</option>
+                    <option>ગુજરાતી</option>
+                    <option>हिन्दी</option>
+                    <option>Hrvatski</option>
+                    <option>Magyar</option>
+                    <option>ಕನ್ನಡ</option>
+                    <option>മലയാളം</option>
+                    <option>मराठी</option>
+                    <option>नेपाली</option>
+                    <option>ਪੰਜਾਬੀ</option>
+                    <option>සිංහල</option>
+                    <option>Slovenčina</option>
+                    <option>தமிழ்</option>
+                    <option>తెలుగు</option>
+                    <option>Tiếng Việt</option>
+                    <option>中文(香港)</option>
+                    <option>Български</option>
+                    <option>Français (Canada)</option>
+                    <option>Română</option>
+                    <option>Српски</option>
+                    <option>Українська</option>
+                </select>
+                <div id="copyright" style="font-family: inherit;color: #8e8e8e;font-family: inherit;font-size: 12px;width: 180px;position: relative;bottom: 17px;left: 305px">© 2021 Instagram from Facebook</div>
+            </div>
+        </div>
     </body>
 </html>
