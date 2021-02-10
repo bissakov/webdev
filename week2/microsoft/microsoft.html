@@ -9,6 +9,7 @@
         		margin: 0px;
 				font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 				color: black;
+				overflow-x: hidden;
         	}
         	#header{
         		height: 57px;
@@ -24,34 +25,95 @@
         		margin: 17px 12px 10px 12px;
         	}
         	.alink:hover{
+        		cursor: pointer;
         		border-bottom: 2px solid;
         	}
         	/*Mega menu (start)*/
-			#dropdown{
-				/*position: relative;
-				left: 565px;*/
-			}
 			#dropdown-content{
 				display: none;
 				position: relative;
-				left: 287px;
 				z-index: 1;
-				background-color: grey;
-				height: 428px;
-				width: 1228px;
-				
+				background-color: #f2f2f2;
+				height: 432px;
+				width: 1200px;
+				bottom: 3px;
+				left: 285px;
+				border: 2px solid #dbdbdb;
+				font-size: 13px;
+				font-family: inherit;
+				font-weight: normal;
+			}
+			h3{
+				font-size: 13px;
+				font-family: inherit;
+				color: black;
+				margin-left: 25px;
+				margin-bottom: 30px;
+			}
+			#column a{
+				color: #333;
+			}
+			#column{
+				width: 195px;
+				height: 390px;
+				display: inline-block;
+			}
+			li{
+				margin-left: 25px;
+				margin-bottom: 20px;
 			}
 			#dropdown:checked~#dropdown-content{
 				display: block;
 				
 			}
-			
+			.visually-hidden{
+				visibility: hidden;
+			}
+			#dropdown_label{
+				cursor: pointer;
+				padding: 17px 12px 10px 12px;
+				font-family: inherit;
+				font-size: 13px;
+				font-weight: normal;
+			}
+			#dropdown, #dropdown_label{
+				position: relative;
+				left: 553px;
+			}
+			#sitemap{
+				text-align: center;
+				width: 1200px;
+				height: 38px;
+				position: relative;
+				bottom: 112px;
+				border-bottom: 2px solid black;
+				font-size: 13px;
+				font-family: inherit;
+				background-color: #e6e6e6;
+			}
         	/*Mega menu (end)*/
+        	#search{
+        		padding: 17px 12px 8px 12px;
+        		position: relative;
+        		bottom: 55px;
+        		left: 1314px;
+        	}
+        	#cart{
+        		padding: 17px 12px 8px 12px;
+        		position: relative;
+        		bottom: 98px;
+        		left: 1400px;
+        	}
+        	#signin{
+        		cursor: pointer;
+        		padding: 17px 12px 8px 12px;
+        		position: relative;
+        		bottom: 142px;
+        		left: 1465px;
+        	}
 			#slides{				
 				width: 1600px;
-				height: 598px;
-				position: relative;
-				left: 151px;
+				height: 598px;				
 				cursor: pointer;
 			}
 			#microsoft365{
@@ -70,9 +132,9 @@
 				position: relative;
 				top: 23px;
 			}
-			#slide_button{
+			#slide_button1{
 				text-align: center;
-				text-decoration:none;
+				text-decoration: none;
 				color: white;
 				font-family: inherit;
 				font-size: 15px;
@@ -82,26 +144,31 @@
 				bottom: 6px;
 				background-color: black;
 			}
-			#slide_button:hover{
+			#slide_button1:hover{
 				border-bottom: 2px solid white;
 				position: relative;
 				left: 18px;
 			}
-			#chevron_symb{
+			#slide_button2{
+				text-align: center;
 				text-decoration: none;
-				color: white;
+				color: black;
+				font-family: inherit;
+				font-size: 15px;
+				font-weight: 600;
 				position: relative;
-				left: 25px;
-				top: -5px;
-				font-size: 12px;
+				left: 80px;
+				bottom: 6px;
 			}
-			#slide_button:hover~#chevron_symb{
+			#slide_button2:hover{
+				border-bottom: 2px solid black;
 				position: relative;
-				left: 28px;
+				left: 76px;
 			}
+			
 			#services{
 				box-sizing: border-box-box;
-				height: 177px;
+				height: 231px;
 				width: 1618px;
 				position: relative;
 				top: 1px;
@@ -119,11 +186,16 @@
 				font-size: 15px;
 				font-weight: 600;
 			}
+			.service a ul{
+				position: relative;
+				bottom: 14px;
+				width: 120%;
+				margin-bottom: 50px
+			}
 			#item1{
 				position: relative;
 				left: 278px;
 				top: 78px;
-				
 			}
 			#item2{
 				position: relative;
@@ -150,8 +222,18 @@
 				left: 1198px;
 				top: -122px;
 			}
+			.service a{
+				color: black;
+			}
+			#follow{
+				display: inline-block;
+				width: 250px;
+				position: relative;
+				left: 151px;
+				margin-bottom: 72px;
+			}
 			#footer{
-				height: 397px;
+				height: 440px;
 				background-color: #f2f2f2;
 			}
 			#fli{
@@ -169,43 +251,43 @@
 				width: 267px;
 				position: relative;
 				left: 151px;
-				top: 36px;rey;
+				top: 36px;
 			}
 			#f2{
 				width: 267px;
 				position: relative;
 				left: 418px;
-				bottom: 243px;
+				bottom: 285px;
 			}
 			#f3{
 				width: 267px;
 				position: relative;
 				left: 685px;
-				bottom: 522px;
+				bottom: 606px;
 			}
 			#f4{
 				width: 267px;
 				position: relative;
 				left: 952px;
-				bottom: 708px;
+				bottom: 822px;
 			}
 			#f5{
 				width: 267px;
 				position: relative;
 				left: 1219px;
-				bottom: 987px;
+				bottom: 1143px;
 			}
 			#f6{
 				width: 267px;
 				position: relative;
 				left: 1486px;
-				bottom: 1235px;			
+				bottom: 1429px;
 			}
 			#locale{
 				height: 24px;
 				width: 138.5px;
 				position: relative;
-				bottom: 1195px;
+				bottom: 1400px;
 				left: 151px;
 				color: #616161;
 				font-family: inherit;
@@ -213,7 +295,7 @@
 			}
 			#corpo_links{
 				position: relative;
-				bottom: 1216px;
+				bottom: 1420px;
 				left: 1045px;
 				height: 20px;
 				width: 707px;
@@ -235,68 +317,94 @@
     		<a class="alink" href="" id="head_link">Xbox</a>
     		<a class="alink" href="" id="head_link">Deals</a>
     		<a class="alink" href="" id="head_link">Support</a>
-    		<label for="dropdown">All Microsoft</label>
-    		<input type="checkbox" id="dropdown" class="visually-hidden">
+
+	    	<label for="dropdown" id="dropdown_label"><div class="alink">All Microsoft <span class="glyphicon glyphicon-menu-down" style="color: #8c8c8c;font-size: 10px"></span></div></label>
+	    	<input type="checkbox" id="dropdown" class="visually-hidden">
     		
     		<div id="dropdown-content">
-    			<div id="column">
+    			<div id="column" style="position: relative;bottom: 38px;">
 					<h3>Software</h3>
-					<a href="">Windows Apps</a>
-					<a href="">OneDrive</a>
-					<a href="">Outlook</a>
-					<a href="">Skype</a>
-					<a href="">OneNote</a>
-					<a href="">Microsoft Teams</a>
-					<a href="">Microsoft Edge</a>
-		    	</div>
-			    <div id="column">
-					<h3>PCs & Devices</h3>
-					<a href="">Computers</a>
-					<a href="">Shop Xbox</a>
-					<a href="">Accessories</a>
-					<a href="">VR & mixed reality</a>
-					<a href="">Phones</a>
+					<ul>
+						<li><a href="">Windows Apps</a></li>
+						<li><a href="">OneDrive</a></li>
+						<li><a href="">Outlook</a></li>
+						<li><a href="">Skype</a></li>
+						<li><a href="">OneNote</a></li>
+						<li><a href="">Microsoft Teams</a></li>
+						<li><a href="">Microsoft Edge</a></li>
+					</ul>
 				</div>
-				<div id="column">
+			    <div id="column" style="position: relative;bottom: 114px;">
+					<h3>PCs & Devices</h3>
+					<ul>
+						<li><a href="">Computers</a></li>
+						<li><a href="">Shop Xbox</a></li>
+						<li><a href="">Accessories</a></li>
+						<li><a href="">VR & mixed reality</a></li>
+						<li><a href="">Phones</a></li>
+					</ul>
+				</div>
+				<div id="column" style="position: relative;bottom: 76px;">
 					<h3>Entertainment</h3>
-					<a href="">Xbox Game Pass</a>
-					<a href="">Xbox Live Gold</a>
-					<a href="">Xbox games</a>
-					<a href="">PC games</a>
-					<a href="">Windows digital games</a>
-					<a href="">Movies & TV</a>
+					<ul>
+						<li><a href="">Xbox Game Pass</a></li>
+						<li><a href="">Xbox Live Gold</a></li>
+						<li><a href="">Xbox games</a></li>
+						<li><a href="">PC games</a></li>
+						<li><a href="">Windows digital games</a></li>
+						<li><a href="">Movies & TV</a></li>
+					</ul>
 				</div>
 				<div id="column">
 					<h3>Business</h3>
-					<a href="">Microsoft Azure</a>
-					<a href="">Microsoft Dynamics 365</a>
-					<a href="">Microsoft 365</a>
-					<a href="">Microsoft Industry</a>
-					<a href="">Data platform</a>
-					<a href="">Microsoft Advertising</a>
-					<a href="">Power Platform</a>
-					<a href="">Shop Business</a>          
+					<ul>
+						<li><a href="">Microsoft Azure</a></li>
+						<li><a href="">Microsoft Dynamics 365</a></li>
+						<li><a href="">Microsoft 365</a></li>
+						<li><a href="">Microsoft Industry</a></li>
+						<li><a href="">Data platform</a></li>
+						<li><a href="">Microsoft Advertising</a></li>
+						<li><a href="">Power Platform</a></li>
+						<li><a href="">Shop Business</a></li>
+					</ul>
 				</div>
-				<div id="column">
+				<div id="column" style="position: relative;bottom: 38px;">
 					<h3>Developers & IT</h3>          
-					<a href="">.NET</a>
-					<a href="">Visual Studio</a>
-					<a href="">Windows Server</a>
-					<a href="">Windows Dev Center</a>
-					<a href="">Docs</a>
-					<a href="">Power Apps</a>
-					<a href="">HoloLens 2</a>
+					<ul>
+						<li><a href="">.NET</a></li>
+						<li><a href="">Visual Studio</a></li>
+						<li><a href="">Windows Server</a></li>
+						<li><a href="">Windows Dev Center</a></li>
+						<li><a href="">Docs</a></li>
+						<li><a href="">Power Apps</a></li>
+						<li><a href="">HoloLens 2</a></li>
+						<li></li>
+					</ul>
 				</div>
-				<div id="column">
-					<h3>Other</h3>          
-					<a href="">Microsoft Rewards</a>
-					<a href="">Free downloads & security</a>
-					<a href="">Education</a>
-					<a href="">Virtual workshops and training</a>
-					<a href="">Gift cards</a>
-					<a href="">Licensing</a>
-					<a href="">Microsoft Experience Center</a>
+				<div id="column" style="position: relative;bottom: 20px;">
+					<h3>Other</h3>
+					<ul>
+						<li><a href="">Microsoft Rewards</a></li>
+						<li><a href="">Free downloads & security</a></li>
+						<li><a href="">Education</a></li>
+						<li><a href="">Virtual workshops and training</a></li>
+						<li><a href="">Gift cards</a></li>
+						<li><a href="">Licensing</a></li>
+						<li><a href="">Microsoft Experience Center</a></li>
+					</ul>
 		    	</div>
+
+		    	<div id="sitemap"><a href="" style="position: relative;top: 9px;color: black;">VIEW SITEMAP <span class="glyphicon glyphicon-menu-right" style="color: #8c8c8c;opacity: 0.8;font-size: 12px"></span></a></div>
+    		</div>
+
+    		<div id="search">
+    			<div class="alink" style="font-size: 13px;font-family: inherit;margin:0px;width:60px">Search  <span class="glyphicon glyphicon-search" style="opacity: 0.7;"></span></div>
+    		</div>
+    		<div id="cart">
+    			<div class="alink" style="font-size: 13px;font-family: inherit;margin:0px;width:44px">Cart  <span class="glyphicon glyphicon-shopping-cart" style="opacity: 0.7;"></span></div>
+    		</div>
+    		<div id="signin">
+    			<a style="font-size: 13px;font-family: inherit;margin:0px;width:44px;text-decoration: none;color:#262626">Sign in  <span class="glyphicon glyphicon-user" style="opacity: 0.7;"></span></div>
     		</div>
     	</div>
 
@@ -304,54 +412,63 @@
     	
 
 
-    	<div id="slides">
+    	<div id="slides" style="position: relative;left: 151px;">
     		<a href=""><img src="assets\slide1.png"></a>
     		<div id="microsoft365">
     			<p style="margin: 0px;font-size: 34px;font-weight: 600;opacity: .95;position: relative;bottom: 3px;height: 43px;padding-bottom: 3px;">Microsoft 365</p>
     			<p style="margin: 9px 0px 0px 0px;font-size: 15px;">Premium Office apps, extra cloud storage, advanced security, and more—all in one convenient subscription</p>
     			<div id="black_box"></div>
-    			<a href="" id="slide_button">For up to 6 people</a>
-    			<a href=""><span id="chevron_symb" id="glyphicon glyphicon-menu-right"></span></a>
+    			<a href="" id="slide_button1">For up to 6 people</a>
+    			<span id="symb_right" class="glyphicon glyphicon-menu-right" style="color:white;position: relative;left: 20px;top: -4px;"></span>
+    			<a href="" id="slide_button2">For 1 person</a>
+    			<span id="symb_right" class="glyphicon glyphicon-menu-right" style="position: relative;left: 80px;top: -4px;"></span>
     		</div>
     	</div>
 
     	<div id="services">
-    		<div id="service" id="item1">
+    		<div class="service" id="item1">
     			<a href=""><ul>
 		    		<li><img src="assets/item1.png"></li>	
 		    		<li>Choose your Microsoft 365</li>
 		    	</ul></a>
     		</div>
-    		<div id="service" id="item2">
+    		<div class="service" id="item2">
     			<a href=""><ul>
 		    		<li><img src="assets/item2.png"></li>	
 		    		<li>Shop Surface devices</li>
 		    	</ul></a>
     		</div>
-    		<div id="service" id="item3">
+    		<div class="service" id="item3">
     			<a href=""><ul>
 		    		<li><img src="assets/item3.png"></li>	
 		    		<li>Buy Xbox games and consoles</li>
 		    	</ul></a>
     		</div>
-    		<div id="service" id="item4">
+    		<div class="service" id="item4">
     			<a href=""><ul>
 		    		<li><img src="assets/item4.png"></li>	
 		    		<li>Shop Windows 10</li>
 		    	</ul></a>
     		</div>
-    		<div id="service" id="item5">
+    		<div class="service" id="item5">
     			<a href=""><ul>
 		    		<li><img src="assets/item5.png"></li>	
 		    		<li>Find your next PC</li>
 		    	</ul></a>
     		</div>
-    		<div id="service" id="item6">
+    		<div class="service" id="item6">
     			<a href=""><ul>
 		    		<li><img src="assets/item6.png"></li>	
 		    		<li>Shop Business</li>
 		    	</ul></a>
     		</div>
+    	</div>
+
+    	<div id="follow">
+    		<div style="float:left;font-size: 15px;font-family: inherit;width: 115px;opacity: 0.6">Follow Microsoft </div>
+    		<a href="" style="float:right;margin-right: 15px"><img src="assets\linkedin.jpg" height="28" width="28"></a>
+    		<a href="" style="float:right;margin-right: 15px"><img src="assets\twitter.jpg" height="28" width="28"></a>
+    		<a href="" style="float:right;margin-right: 15px"><img src="assets\facebook.jpg" height="28" width="28"></a>
     	</div>
 
     	<div id="footer">
