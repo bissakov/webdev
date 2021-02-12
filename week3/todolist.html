@@ -4,12 +4,12 @@
       <!-- SCRIPT -->
       <script>
          function delete_item(){
-         	var trash_list = document.getElementsByClassName("glyphicon glyphicon-trash");
-         	for(var i = 0; i < trash_list.length; ++i){
-         		if(document.activeElement == trash_list[i].parentNode){
-         			document.activeElement.parentNode.parentNode.remove();
-         		}
-         	}
+            var trash_list = document.getElementsByClassName("glyphicon glyphicon-trash");
+            for(var i = 0; i < trash_list.length; ++i){
+               if(document.activeElement == trash_list[i].parentNode){
+                  document.activeElement.parentNode.parentNode.remove();
+               }
+            }
          }
          function add_item_fun(){
             var input = document.getElementById("input_box").value;
