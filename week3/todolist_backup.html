@@ -42,6 +42,8 @@
 					node.appendChild(delete_button_node);
 
 					document.getElementById("items").appendChild(node);
+
+					document.getElementById("form").reset();
 				}else{
 					alert("Error. Empty input.");
 				}				
@@ -49,8 +51,6 @@
 			function read_item(){
 				checkbox_list = document.getElementsByClassName("input_checkbox");
 				item = document.getElementsByClassName("item");
-				console.log(checkbox_list);
-				console.log(item);
 
 				for(var i = 0; i < checkbox_list.length; ++i){
 					if(checkbox_list[i].checked == true){
@@ -188,7 +188,7 @@
 
     	<div id="add_item">
     		<form id="form" onsubmit="return false;">
-	    		<input type="text" id="input_box" placeholder="New Task" autocomplete="off" required>
+	    		<input type="text" id="input_box" placeholder="New Task" autocomplete="off">
 	    		<input type="submit" value="Add" onclick="add_item_fun()">
 	    	</form>
     	</div>
