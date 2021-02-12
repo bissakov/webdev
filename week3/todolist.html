@@ -12,54 +12,52 @@
          	}
          }
          function add_item_fun(){
-         var input = document.getElementById("input_box").value;
-         
-         if(input.length > 0){
-         var node = document.createElement("li");
-         node.setAttribute("class", "item");
-         
-         var checkbox_1 = document.createElement("input");
-         checkbox_1.setAttribute("type", "checkbox");
-         checkbox_1.setAttribute("class", "input_checkbox");
-         checkbox_1.setAttribute("onclick", "read_item()");
-         node.appendChild(checkbox_1);
-         
-         var text = document.createTextNode(input);
-         node.appendChild(text);
-         
-         var delete_button_node = document.createElement("div");
-         delete_button_node.setAttribute("id", "delete");
-         delete_button_node.setAttribute("onclick", "delete_item()");
-         
-         var button_button = document.createElement("button");
-         button_button.setAttribute("type", "button");
-         delete_button_node.appendChild(button_button);
-         
-         var symbol = document.createElement("span");
-         symbol.setAttribute("class", "glyphicon glyphicon-trash");
-         button_button.appendChild(symbol);
-         
-         node.appendChild(delete_button_node);
-         
-         document.getElementById("items").appendChild(node);
-         }else{
-         alert("Error. Empty input.");
-         }				
+            var input = document.getElementById("input_box").value;
+            
+            if(input.length > 0){
+               var node = document.createElement("li");
+               node.setAttribute("class", "item");
+               
+               var checkbox_1 = document.createElement("input");
+               checkbox_1.setAttribute("type", "checkbox");
+               checkbox_1.setAttribute("class", "input_checkbox");
+               checkbox_1.setAttribute("onclick", "read_item()");
+               node.appendChild(checkbox_1);
+               
+               var text = document.createTextNode(input);
+               node.appendChild(text);
+               
+               var delete_button_node = document.createElement("div");
+               delete_button_node.setAttribute("id", "delete");
+               delete_button_node.setAttribute("onclick", "delete_item()");
+               
+               var button_button = document.createElement("button");
+               button_button.setAttribute("type", "button");
+               delete_button_node.appendChild(button_button);
+               
+               var symbol = document.createElement("span");
+               symbol.setAttribute("class", "glyphicon glyphicon-trash");
+               button_button.appendChild(symbol);
+               
+               node.appendChild(delete_button_node);
+               
+               document.getElementById("items").appendChild(node);
+            }else{
+               alert("Error. Empty input.");
+            }				
          }
          function read_item(){
-         checkbox_list = document.getElementsByClassName("input_checkbox");
-         item = document.getElementsByClassName("item");
-         console.log(checkbox_list);
-         console.log(item);
-         
-         for(var i = 0; i < checkbox_list.length; ++i){
-         if(checkbox_list[i].checked == true){
-         item[i].setAttribute("style", "filter:blur(3px) grayscale(100%);");
-         }
-         else{
-         item[i].setAttribute("style", "filter:none");
-         }
-         }
+            checkbox_list = document.getElementsByClassName("input_checkbox");
+            item = document.getElementsByClassName("item");
+            
+            for(var i = 0; i < checkbox_list.length; ++i){
+               if(checkbox_list[i].checked == true){
+                  item[i].setAttribute("style", "filter:blur(3px) grayscale(100%);");
+               }
+               else{
+                  item[i].setAttribute("style", "filter:none");
+               }
+            }
          }
          
       </script>
@@ -75,107 +73,107 @@
          margin: 0px;
          }
          #header{
-         height: 70px;
-         background-color: #c9c9c9;
-         margin: 0px;
-         z-index: 1;
-         cursor: pointer;
+            height: 70px;
+            background-color: #c9c9c9;
+            margin: 0px;
+            z-index: 1;
+            cursor: pointer;
          }
          #header div{
-         text-align: center;
-         padding: 22.5px 0px;
-         color: black;
-         opacity: 0.8;
-         font-family: 'Lexend Mega', sans-serif;
-         font-size: 20px;
+            text-align: center;
+            padding: 22.5px 0px;
+            color: black;
+            opacity: 0.8;
+            font-family: 'Lexend Mega', sans-serif;
+            font-size: 20px;
          }
          #add_item{
-         text-align: center;
-         margin-top: 100px;
-         margin-bottom: 50px;   		
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 50px;   		
          }
          #input_box{
-         width: 500px;
-         height: 40px;
-         border: 1px solid;
-         border-color: rgba(0,0,0,0.3);
-         border-radius: 5px;
-         font-family: 'Poppins', sans-serif;
+            width: 500px;
+            height: 40px;
+            border: 1px solid;
+            border-color: rgba(0,0,0,0.3);
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
          }
          #input_box:focus {
-         outline: none;
-         box-shadow: 0 0 3pt 0pt rgba(0,0,0,0.5);     			
+            outline: none;
+            box-shadow: 0 0 3pt 0pt rgba(0,0,0,0.5);     			
          }
          #add_item input[type=submit]{
-         height: 44px;
-         width: 60px;
-         margin-left: 10px;
-         border: none;
+            height: 44px;
+            width: 60px;
+            margin-left: 10px;
+            border: none;
          }
          #add_item input[type=submit]:focus{
-         outline: none;
+            outline: none;
          }
          #add_item input[type=submit]:hover{
-         background-color: #145eff;
-         color: white;
+            background-color: #145eff;
+            color: white;
          }
          ::placeholder{
-         padding-left: 0px;
-         font-family: 'Poppins', sans-serif;
+            padding-left: 0px;
+            font-family: 'Poppins', sans-serif;
          }
          input[type=text]{
-         padding: 0px 20px;
+            padding: 0px 20px;
          }
          ::value{
-         text-align: center;
-         font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
          }
          #scrollable {
-         height: 520px;    			
-         display:inline-block;
-         position: relative;
-         left: 551.5px;
-         overflow-y: auto;
+            height: 520px;    			
+            display:inline-block;
+            position: relative;
+            left: 551.5px;
+            overflow-y: auto;
          }
          ul{
-         list-style-type:none;
-         padding: 0px;
+            list-style-type:none;
+            padding: 0px;
          }
          #items{
-         height: 355px;
-         width: 800px;
-         font-family: 'Poppins', sans-serif;
+            height: 355px;
+            width: 800px;
+            font-family: 'Poppins', sans-serif;
          }
          #items input[type=checkbox]{
-         margin: 0px 60px;
-         width: 20px;
-         height: 20px;
+            margin: 0px 60px;
+            width: 20px;
+            height: 20px;
          }
          .item{
-         margin-bottom: 5px;
-         border: 1px solid;
-         border-color: rgba(0,0,0,0.3);
-         padding: 35px 0px;
-         border-radius: 5px;
-         font-size: 20px;
+            margin-bottom: 5px;
+            border: 1px solid;
+            border-color: rgba(0,0,0,0.3);
+            padding: 35px 0px;
+            border-radius: 5px;
+            font-size: 20px;
          }
          #delete{
-         float: right;
-         margin: 0px 60px;
-         color: #ffb8b8;
-         cursor: pointer;
+            float: right;
+            margin: 0px 60px;
+            color: #ffb8b8;
+            cursor: pointer;
          }
          #delete:hover{
-         color: red;
+            color: red;
          }
          button{
-         margin: 0px;
-         padding: 0px;
-         border: none;
-         background-color: white;
+            margin: 0px;
+            padding: 0px;
+            border: none;
+            background-color: white;
          }
          button:focus{
-         outline: none;
+            outline: none;
          }
       </style>
    </head>
