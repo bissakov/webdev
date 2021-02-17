@@ -55,10 +55,10 @@
             
             for(var i = 0; i < checkbox_list.length; ++i){
                if(checkbox_list[i].checked == true){
-                  item[i].setAttribute("style", "filter:blur(3px) grayscale(100%);");
+                  item[i].setAttribute("style", "filter:grayscale(100%);text-decoration: line-through;");
                }
                else{
-                  item[i].setAttribute("style", "filter:none");
+                  item[i].setAttribute("style", "filter:none;text-decoration:none;");
                }
             }
          }
